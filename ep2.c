@@ -76,7 +76,12 @@ void preencheVetores(int* vetor1, int* vetor2,int N){
         vetor2[i] = vetor1[i];
     }
 }
-
+/*
+Funcao principal que aloca a memoria pros dois vetores que vamos utilizar,
+chama a funcao que preenche todas as posicoes dos vetores 10 vezes diferentes
+e ordena os dois vetores todas as vezes, somando o tempo de execucao
+e fazendo a media dos tempos.
+*/
 void calcularPerformance(int N){
     int *vetor = malloc(sizeof (int) * N);
     int *vetor2 = malloc(sizeof (int) * N);
